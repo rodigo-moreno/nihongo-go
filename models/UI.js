@@ -3,7 +3,7 @@
 
 let variableSesion = sessionStorage.getItem("testCache");
 if(variableSesion === null){
-    window.location.href = "http://127.0.0.1:5500/Login/index.html"
+    window.location.href = "http://127.0.0.1:5500/index.html"
 }
 let {nombre, puntos} = JSON.parse(sessionStorage.getItem('testCache'));
 let puntajeTotal;
@@ -108,7 +108,7 @@ export class UI{
                         calcularPuntaje(score)
                         sessionStorage.removeItem('testCache')
                         //si no vuelve al inicio
-                        window.location.href = `http://127.0.0.1:5500/Login/index.html`
+                        window.location.href = `http://127.0.0.1:5500/index.html`
                     }
                 })
             }

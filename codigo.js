@@ -1,4 +1,4 @@
-import { Jugador } from "../jugador.js";
+import { Jugador } from "./jugador.js";
 
 const form = document.querySelector("form");
 const btnUsuarios = document.querySelector("#mostrar");
